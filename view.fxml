@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?> <!-- Import Insets for padding -->
+<?import javafx.scene.control.Label?> <!-- Import Label for text display -->
+<?import javafx.scene.control.TextField?> <!-- Import TextField for user input -->
+<?import javafx.scene.control.Button?> <!-- Import Button for triggering actions -->
+<?import javafx.scene.layout.VBox?> <!-- Import VBox for vertical layout -->
+
+<?import javafx.scene.control.Button?>
+<!-- Define the layout and link it to the Controller class -->
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.group8.assignment3.Controller">
+  <!-- Label to instruct the user -->
+  <Label text="Enter three numbers:"/>
+
+  <!-- Input fields for entering numbers -->
+  <TextField fx:id="inputField1" promptText="Number 1"/>
+  <TextField fx:id="inputField2" promptText="Number 2"/>
+  <TextField fx:id="inputField3" promptText="Number 3"/>
+
+  <!-- Button to trigger the calculation -->
+  <Button text="Calculate Mean" onAction="#handleSubmitButtonAction"/>
+
+  <!-- Label to display the result or error message -->
+  <Label fx:id="resultLabel"/>
+</VBox>
